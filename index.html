@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Abhishek Kaushik's portfolio showcasing data analysis, web development, Android apps, and programming projects.">
+
     <title>Abhishek Kaushik | Portfolio</title>
 
     <link rel="icon" type="image/svg+xml" href="assets/icons/ak.svg">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            Abhishek<span>.</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
+    <header class="header">
+        <a href="#home" class="logo">Abhishek<span>.</span></a>
+
+        <button class="menu-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="nav-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav id="nav-menu" aria-label="Main navigation">
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -29,181 +45,303 @@
         </nav>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h3>Hello, I'm</h3>
-            <h1>Abhishek Kaushik</h1>
-            <h2>
-                <span id="typing"></span>
-            </h2>
-            <p>
-                Passionate Data Analyst and Software Developer with practical experience
-                in Data Analysis, Frontend Development, Android Applications,
-                Database Management and Offline App Development.
-            </p>
-            <div class="buttons">
-                <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
-                <a href="#contact" class="btn btn2">Contact Me</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="assets/images/profile.png" alt="Profile">
-        </div>
-    </section>
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">WELCOME TO MY PORTFOLIO</span>
 
-    <section class="about" id="about">
-        <h2 class="title">About Me</h2>
-        <p>
-            I am an aspiring Data Analyst and Software Developer with practical
-            experience in data management, frontend web development, and Android
-            application development.
-            My technical interests include Microsoft Excel, database management,
-            web technologies, Android development, and continuously learning
-            new programming tools and technologies.
-            I enjoy solving real-world problems and building user-friendly applications.
-        </p>
-    </section>
+                <h1>Hi, I'm <span>Abhishek Kaushik</span></h1>
 
-    <section class="skills" id="skills">
-        <h2 class="title">Technical Skills</h2>
-        <div class="skill-box">
-            <div class="card">
-                <i class="fa-solid fa-chart-column"></i>
-                <h3>Data Analysis</h3>
-                <ul>
-                    <li>Advanced Excel</li>
-                    <li>Data Cleaning</li>
-                    <li>Data Validation</li>
-                    <li>Data Management</li>
-                    <li>Pivot Tables</li>
-                    <li>Charts & Dashboards</li>
-                    <li>VLOOKUP / XLOOKUP</li>
-                    <li>Email Sourcing</li>
-                </ul>
-            </div>
+                <h2>
+                    I'm a <span id="typing">Data Analyst</span><span class="cursor">|</span>
+                </h2>
 
-            <div class="card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Frontend</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Tailwind CSS</li>
-                    <li>Responsive Design</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-database"></i>
-                <h3>Backend</h3>
-                <ul>
-                    <li>PHP</li>
-                    <li>MySQL</li>
-                    <li>SQLite</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <i class="fa-brands fa-android"></i>
-                <h3>Android Development</h3>
-                <ul>
-                    <li>Android Studio</li>
-                    <li>Room Database</li>
-                    <li>SQLite</li>
-                    <li>Offline Apps</li>
-                    <li>XML Layouts</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <i class="fa-solid fa-laptop-code"></i>
-                <h3>Programming</h3>
-                <ul>
-                    <li>Java</li>
-                    <li>Python (Basic)</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <i class="fa-brands fa-linux"></i>
-                <h3>Linux & Termux</h3>
-                <ul>
-                    <li>ls</li>
-                    <li>cd</li>
-                    <li>touch</li>
-                    <li>mkdir</li>
-                    <li>mv</li>
-                    <li>cat</li>
-                    <li>chmod</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Live Resume Builder</h3>
                 <p>
-                    Interactive single-page web app with live formatting preview, dynamic section mapping (Education/Experience), custom accent color pickers, and high-fidelity A4 layout PDF export configurations.
+                    I enjoy working with data, building websites, and developing
+                    useful applications. I am always learning and improving
+                    my technical skills through practical projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="resume.pdf" class="btn" target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fa-regular fa-file-lines"></i>
+                        View Resume
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/abhishekkaushikcsa/"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.png"
+                     alt="Abhishek Kaushik"
+                     width="320" height="320">
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="section-heading">
+                <span>GET TO KNOW ME</span>
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <p>
+                    I am an aspiring Data Analyst and Software Developer
+                    interested in data analysis, web development, database
+                    management, and Android application development.
+                </p>
+
+                <p>
+                    I work with tools such as Microsoft Excel, HTML, CSS,
+                    JavaScript, PHP, MySQL, Java, and Android Studio.
+                    I enjoy learning new technologies and using my skills
+                    to solve practical problems.
                 </p>
             </div>
+        </section>
 
-            <div class="project">
-                <h3>Dynamic Notes Application</h3>
-                <p>
-                    A clean web-based markdown notes utility featuring real-time data input, filtering system, structured category tag management, and clean user-interface states.
-                </p>
+        <section class="section section-alt" id="skills">
+            <div class="section-heading">
+                <span>WHAT I WORK WITH</span>
+                <h2>Technical Skills</h2>
             </div>
 
-            <div class="project">
-                <h3>akmusic Streaming App</h3>
-                <p>
-                    A native Android music application engineered to support real-time data synchronization between the mobile client UI and web application panels using live communication streams.
-                </p>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3>Data Analysis</h3>
+                    <p>Microsoft Excel, data cleaning, data validation,
+                       PivotTables, charts, dashboards, VLOOKUP and XLOOKUP.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML5, CSS3, JavaScript, jQuery, Tailwind CSS,
+                       and responsive web design.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3>Backend & Databases</h3>
+                    <p>PHP, MySQL, SQLite, and basic database operations.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-android"></i>
+                    </div>
+                    <h3>Android Development</h3>
+                    <p>Android Studio, Java, XML layouts, Room Database,
+                       SQLite, and offline applications.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-terminal"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>Java, Python basics, Linux commands, and Termux basics.</p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Tools & Productivity</h3>
+                    <p>Git, GitHub, Microsoft Office, data management,
+                       and everyday development tools.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <span>MY RECENT WORK</span>
+                <h2>Projects</h2>
+                <p>A selection of projects I have worked on or am developing.</p>
             </div>
 
-            <div class="project">
-                <h3>Excel Sales Dashboard</h3>
-                <p>
-                    Comprehensive business analytics pipeline utilizing advanced data cleaning, pivot tables, multi-variable charts, and cross-functional lookup validations to track performance KPIs.
-                </p>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3>Resume Builder</h3>
+                    <p>
+                        A web application concept for creating and formatting
+                        resumes with editable sections and a print-friendly layout.
+                    </p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a class="project-link"
+                       href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-note-sticky"></i>
+                    </div>
+                    <h3>Notes Application</h3>
+                    <p>
+                        A notes application concept focused on creating,
+                        organizing, searching, and managing personal notes.
+                    </p>
+                    <div class="tags">
+                        <span>JavaScript</span><span>UI Design</span><span>Storage</span>
+                    </div>
+                    <a class="project-link"
+                       href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <h3>Akmusic</h3>
+                    <p>
+                        A music application project exploring playlist browsing
+                        and music playback interfaces across web and Android.
+                    </p>
+                    <div class="tags">
+                        <span>Android</span><span>Java</span><span>Web</span>
+                    </div>
+                    <a class="project-link"
+                       href="https://github.com/akaushcsa-cell/Akmusic"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3>Excel Sales Dashboard</h3>
+                    <p>
+                        A data analysis project idea using spreadsheets,
+                        PivotTables, charts, and KPIs to explore sales data.
+                    </p>
+                    <div class="tags">
+                        <span>Excel</span><span>PivotTables</span><span>Charts</span>
+                    </div>
+                    <a class="project-link"
+                       href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3>Student Management System</h3>
+                    <p>
+                        A web development project focused on student records,
+                        data entry, and basic database management.
+                    </p>
+                    <div class="tags">
+                        <span>PHP</span><span>MySQL</span><span>HTML</span>
+                    </div>
+                    <a class="project-link"
+                       href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon">
+                        <i class="fa-brands fa-android"></i>
+                    </div>
+                    <h3>Offline Notes App</h3>
+                    <p>
+                        An Android app project focused on saving and managing
+                        notes locally without requiring an internet connection.
+                    </p>
+                    <div class="tags">
+                        <span>Android Studio</span><span>Room</span><span>SQLite</span>
+                    </div>
+                    <a class="project-link"
+                       href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer">
+                        View GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="contact">
+            <div class="section-heading">
+                <span>LET'S CONNECT</span>
+                <h2>Contact Me</h2>
             </div>
 
-            <div class="project">
-                <h3>Student Management System</h3>
+            <div class="contact-content">
                 <p>
-                    Full CRUD application engineered with a secure session-based authentication portal backed by PHP data handling and structural MySQL relational tables.
+                    Looking for a candidate or interested in collaborating?
+                    Feel free to connect with me.
                 </p>
-            </div>
 
-            <div class="project">
-                <h3>Offline Notes App (Android)</h3>
-                <p>
-                    Native Android workspace application engineered in Android Studio with XML custom views and persistent localized SQLite data caching through Room Database layers.
-                </p>
-            </div>
-        </div>
-    </section>
+                <div class="contact-links">
+                    <a href="https://github.com/akaushcsa-cell"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
 
-    <section class="contact" id="contact">
-        <h2 class="title">Contact</h2>
-        <p>Interested in working together or discussing opportunities?</p>
-        <div class="social">
-            <a href="https://github.com/akaushcsa-cell" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/abhishekkaushikcsa/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhbzMffjLKbSpnXmwtgKMhhSQFNvwnTtKnxzNxzTsXjLPdpZBdCBHrrLtXkRCscfwqnWXz" target="_blank"><i class="fas fa-envelope"></i></a>
-        </div>
-    </section>
+                    <a href="https://www.linkedin.com/in/abhishekkaushikcsa/"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                    </a>
+
+                    <a href="mailto:YOUR_EMAIL@example.com">
+                        <i class="fa-regular fa-envelope"></i> Email Me
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2026 Abhishek Kaushik | All Rights Reserved</p>
+        <p>© <span id="year"></span> Abhishek Kaushik. All rights reserved.</p>
     </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
-
 </html>
